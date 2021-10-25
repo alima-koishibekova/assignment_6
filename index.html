@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>
+        Bride/Groom Calculator
+    </h1>
+    <p>
+        The dowry system in India refers to the durable goods, cash, and real or movable property that the bride's family gives to the groom, his parents and his relatives as a condition of the marriage. Dowry is essentially in the nature of a payment in cash or some kind of gifts given to the groom’s family along with the bride and includes cash, jewelry, electrical appliances, furniture, bedding, crockery, utensils, vehicles and other household items that help the newlyweds set up their home. Dowry is referred to as Dahez in Arabic. In the far eastern parts of India, dowry is called Aaunnpot.
+    </p>
+
+<form action="">
+    <label for="education">Education degree</label>
+    <select name="education" id="education">
+    <option selected></option>
+    <option value="1.5" id="education_1"> Undergraduate degree </option>
+    <option value="1.2" id="education_2"> College degree </option>
+    <option value="1.05" id="education_3"> High school degree </option>
+    <option value="0.9" id="education_4"> Middle school degree </option>
+    </select><br><br>
+
+    <label for="family net worth">Family net worth</label> 
+    <select id="family net worth" name="family net worth">
+        <option selected></option>
+        <option value="2" id="family net worth_1">More than 10,000$ </option>
+        <option value="1.5" id="family net worth_2">Between 5,000$ and 10,000$</option>
+        <option value="1.2" id="family net worth_3">Less than 5,000$</option>
+    </select> <br> <br>
+
+    <label for="caste">Caste</label>
+    <select id="caste" id="caste">
+    <option selected></option>
+    <option value="+100" id="caste_1">Brahmin</option>
+    <option value="+50" id="caste_2">Kshatriya</option>
+    <option value="+20" id="caste_3">Vaishya</option>
+    <option value="+10" id="caste_4">Shudra</option>
+    <option value="-50" id="caste_5">Varna - untouchable</option>
+    </select><br><br>
+
+    <label for="skills">Bride's/Groom's skills</label> <br> 
+    <input type="checkbox" id="skill_1" name="skill_1" value="+10" class="skills">
+    <label for="skill_1">Playing on a musical instrument</label> <br>
+    <input type="checkbox" id="skill_2" name="skill_2" value="+20" class="skills">
+    <label for="skill_2">Good cook</label> <br>
+    <input type="checkbox" id="skill_3" name="skill_3" value="+15" class="skills">
+    <label for="skill_3">Easygoing character</label> <br>
+    <input type="checkbox" id="skill_4" name="skill_4" value="+10" class="skills">
+    <label for="skill_4">Sings well</label>
+    <br><br>
+
+    <label for="age">Age</label> <br>
+    <input type="radio" id="age_1" name="age_1" value="1.5">
+    <label for="age_1"> Between 18-23 </label> <br>
+    <input type="radio" id="age_2" name="age_2" value="1.2">
+    <label for="age_2"> Between 24-27 </label> <br>
+    <input type="radio" id="age_3" name="age_3" value="0.95">
+    <label for="age_3"> 28+ </label> 
+    <br><br>
+
+    <label for="reputation">Reputation</label> <br>
+    <input type="checkbox" id="reputation_1" name="reputation_1" value="0.85" class="reputation">
+    <label for="reputation_1">Gossips about his/her parent's attitude</label> <br>
+    <input type="checkbox" id="reputation_2" name="reputation_2" value="0.9" class="reputation">
+    <label for="reputation_2">Gossips about his/her character</label> <br>
+    <input type="checkbox" id="reputatuin_3" name="reputation_3" value="-20" class="reputation">
+    <label for="reputation_3">General gossips around his/her person </label> 
+    <br><br>
+
+    <button input type="button" id="resultButton" onclick="calculate()"> Total price </button>
+</form>
+    <script src="code.js"> </script>
+</body>
+</html>
